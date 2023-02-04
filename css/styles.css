@@ -5,38 +5,40 @@
   --secondary-font: "Raleway", "san-serif";
 
   /* text colors */
-  --main-text-color-b: #212121;
+  --main-text-color-nb: #2E2F42;
   --main-text-color-w: #ffffff;
-  --main-text-color-gr: #757575;
+  --main-text-color-iris: #4D5AE5;
+  --main-text-color-ocean: #404BBF;
+  --main-text-color-slate: #434455;
   --btn-text-color-w: #ffffff;
-  --btn-text-color-d: #212121;
-  --accent-text-color-bl: #2196f3;
+  --accent-text-color-cf: #E7E9FC;
 
   /* backgroung colors */
-  --main-bg-color-dk: #2f303a;
-  --main-bg-color-gr: #f5f4fa;
+  --main-bg-color-dk: #2E2F42;
+  --main-bg-color-cloud: #F4F4FD;
   --main-bg-color-wt: #ffffff;
-  --btn-bgc-color-bl: #2196f3;
-  --btn-bgc-color-gr: #f5f4fa;
-  --accent-btn-bgc-color: #188ce8;
+  --btn-bgc-color-iris: #4D5AE5;
+  --btn-bgc-color-ocean: #404BBF;
+  --btn-bgc-color-cloud: #F4F4FD;
+  
 
   /*others*/
-  --brand-color-blue: #2196f3;
-  --brand-color-black: #000000;
-  --brand-color-white: #ffffff;
-  --border-header-color-gr: #ececec;
-  --border-card-color-gr: #eeeeee;
+  --brand-color-iris: #4D5AE5;
+  --brand-color-navi-blue:#2E2F42;
+  --brand-color-cloud: #F4F4FD;
+  --border-header-color-cloud: #F4F4FD;
+  --border-card-color-cloud: #F4F4FD;
 }
 
 body {
   font-family: var(--main-font);
-  color: var(--main-text-color-b);
+  color: var(--main-text-color-slate);
   background-color: var(--main-bg-color-wt);
   font-size: 14px;
   letter-spacing: 0.03em;
 }
 
-/* rerset styles */
+/* reset styles */
 
 .list {
   list-style: none;
@@ -67,10 +69,10 @@ body {
 
 .header-email,
 .header-phone {
-  color: rgba(117, 117, 117, 1);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: calc(16 / 14);
+  color: var(--main-text-color-slate);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(24 / 16);
   letter-spacing: 0.02em;
 }
 
@@ -78,7 +80,7 @@ body {
 .header-phone:focus,
 .header-email:hover,
 .header-email:focus {
-  color: #2196f3;
+  color: var(--main-text-color-ocean);
 }
 
 /* Elements */
@@ -90,38 +92,38 @@ body {
 
 .header-logo-lp {
   font-family: var(--secondary-font);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: calc(31 / 26);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: calc(24 / 18);
   letter-spacing: 0.03em;
-  color: var(--brand-color-blue);
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: var(--brand-color-iris);
+  text-transform: uppercase;
 }
 
 .header-logo-rp {
   font-family: var(--secondary-font);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: calc(31 / 26);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: calc(24 / 18);
   letter-spacing: 0.03em;
-  color: var(--brand-color-black);
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: var(--brand-color-navi-blue);
+  text-transform: uppercase;
 }
 
 .header-link {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 16px;
+  line-height: calc(24 / 18);
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--main-text-color-nb);
 }
 .header-link:hover,
 .header-link:focus {
-  color: rgba(33, 150, 243, 1);
+  color: var(--main-text-color-ocean);
 }
 
 .header-link-current {
-  color: rgba(33, 150, 243, 1);
+  color: var(--main-text-color-ocean);
 }
 
 /* hero section */
@@ -129,39 +131,31 @@ body {
   background-color: var(--main-bg-color-dk);
 }
 .hero-header {
-  color: #ffffff;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: calc(60 / 44);
+  color: var(--main-bg-color-wt);
+  font-weight: 700;
+  font-size: 56px;
+  line-height: calc(60 / 56);
   text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+  letter-spacing: 0.02em;
+
 }
 
 .hero-btn {
-  width: 200px;
-  height: 50px;
+  width: 169px;
+  height: 56px;
   color: var(--btn-text-color-w);
-  background-color: var(--btn-bgc-color-bl);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  background-color: var(--btn-bgc-color-iris);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 16px;
-  line-height: calc(30 / 16);
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  border: 1px solid #000000;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  line-height: calc(24 / 16);
+  letter-spacing: 0.04em;
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
-  background-color: var(--accent-btn-bgc-color);
+  background-color: #404BBF;
 }
 /* Features section */
 .features-title {
@@ -170,53 +164,46 @@ body {
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--main-text-color-b);
+  color: var(--main-text-color-nb);
 }
 
 .features-text {
   font-weight: 400;
-  font-size: 14px;
-  line-height: calc(24 / 14);
-  letter-spacing: 0.03em;
-  color: #757575;
+  font-size: 16px;
+  line-height: calc(24 / 16);
+  letter-spacing: 0.02em;
 }
 
-/* what we do section */
-.wwd-header {
+/* what we do section / our team section */
+.wwd-header, .our-team-header {
   font-weight: 700;
   font-size: 36px;
-  line-height: calc(42 / 36);
+  line-height: calc(40 / 36);
+  color: var(--main-text-color-nb);
   text-align: center;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
 }
-
-/* our team section */
 .our-team {
-  background-color: var(--main-bg-color-gr);
-}
-.our-team-header {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: calc(42 / 36);
-  text-align: center;
-  letter-spacing: 0.03em;
+  background-color: var(--main-bg-color-cloud);
 }
 
 .team-card-header {
   font-weight: 500;
-  font-size: 16px;
-  line-height: calc(19 / 16);
+  font-size: 20px;
+  line-height: calc(24 / 20);
   text-align: center;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color-nb);
 }
 .team-card-title {
   font-weight: 400;
   font-size: 16px;
-  line-height: calc(19 / 16);
+  line-height: calc(24 / 16);
   text-align: center;
-  letter-spacing: 0.03em;
-  color: #757575;
+  letter-spacing: 0.02em;
 }
+
 /* footer section */
 
 .footer {
@@ -225,26 +212,26 @@ body {
 
 .footer-logo-lp {
   font-family: var(--secondary-font);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: calc(31 / 26);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: calc(24 / 18);
   letter-spacing: 0.03em;
-  color: var(--brand-color-blue);
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: var(--brand-color-iris);
+  text-transform: uppercase;
 }
 
 .footer-logo-rp {
   font-family: var(--secondary-font);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: calc(31 / 26);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: calc(24 / 18);
   letter-spacing: 0.03em;
-  color: var(--brand-color-white);
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: var(--brand-color-cloud);
+  text-transform: uppercase;
 }
-
+/* Adress
 address {
-  font-style: normal;
+ 
 }
 .footer-geo-address {
   color: #ffffff;
@@ -271,37 +258,38 @@ address {
 .footer-email:hover,
 .footer-email:focus {
   color: var(--accent-text-color-bl);
-}
+} */
+
 
 /* PORTFOLIO.html page */
 
 /* main section>
 /* portfolio section */
 /*buttons controls */
+
 .filter-btn {
-  background-color: var(--main-bg-color-gr);
-  color: var(--main-text-color-b);
-  font-style: normal;
+  background-color: var(--main-bg-color-cloud);
+  color: var(--main-text-color-iris);
   font-weight: 500;
   font-size: 16px;
-  line-height: calc(26 / 16);
+  line-height: calc(24 / 16);
   text-align: center;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.04em;
 }
 
 .filter-btn:hover,
 .filter-btn:focus {
-  background-color: var(--accent-btn-bgc-color);
+  background-color: var(--btn-bgc-color-iris);
   color: var(--main-text-color-w);
 }
 
 .current-btn {
-  background-color: var(--accent-btn-bgc-color);
+  background-color: var(--btn-bgc-color-ocean);
   color: var(--main-text-color-w);
   font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;
-  line-height: calc(26 / 16);
+  line-height: calc(24 / 16);
   text-align: center;
   letter-spacing: 0.03em;
 
@@ -311,7 +299,7 @@ address {
 }
 .current-btn:hover,
 .current-btn:focus {
-  background-color: var(--accent-btn-bgc-color);
+  background-color: var(--btn-bgc-color-iris);
 }
 
 /* portfolio cards */
@@ -320,11 +308,19 @@ address {
   font-size: 18px;
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
-  color: var(--main-text-color-b);
+  color: var(--main-text-color-nb);
 }
 .pf-card-title {
   font-size: 16px;
-  line-height: 30px;
+  line-height: calc(30 / 16);
   letter-spacing: 0.03em;
-  color: var(--main-text-color-gr);
+  color: var(--main-text-color-slate);
 }
+.footer-text{
+  width: 264px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(24 / 16);
+  color: var(--accent-text-color-cf);
+  letter-spacing: 0.02em;
+  }
